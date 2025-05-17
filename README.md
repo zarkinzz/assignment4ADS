@@ -1,23 +1,21 @@
-# Graph Demo — “Vertex as an Object”
+## 📌 Graph Demo — "Vertex as an Object"
 
-A small Java project that shows how to build a **weighted graph where
-each vertex keeps its own list of neighbours and edge weights**.
-Includes Breadth-First Search (BFS) and Dijkstra’s shortest-path
-algorithm.
+This Java project demonstrates how to implement a **weighted graph**, where each **vertex** maintains its own **list of neighbors** along with the **edge weights**. The demo includes implementations of **Breadth-First Search (BFS)** and **Dijkstra’s shortest path algorithm**.
 
-## File overview
+### 🗂 File Structure
 
-| File                       | Purpose                                                  |
-|----------------------------|----------------------------------------------------------|
-| `Vertex.java`              | A vertex holding its payload + `Map` of neighbours → weight |
-| `WeightedGraph.java`       | Graph container: add vertices/edges, query neighbours, get weight |
-| `Search.java`              | Abstract base for searches (marking, path reconstruction) |
-| `BreadthFirstSearch.java`  | BFS implementation (ignores weights)                     |
-| `DijkstraSearch.java`      | Dijkstra’s algorithm for non-negative edge weights       |
-| `Main.java`                | Tiny demo with Kazakhstani cities                        |
+| File                      | Description                                                                                  |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| `Vertex.java`             | Represents a graph vertex with its data and a `Map` of connected neighbors and edge weights. |
+| `WeightedGraph.java`      | Manages the graph structure: adding vertices and edges, querying neighbors and weights.      |
+| `Search.java`             | Abstract base class for search algorithms (tracks visited nodes and paths).                  |
+| `BreadthFirstSearch.java` | BFS implementation (does not consider edge weights).                                         |
+| `DijkstraSearch.java`     | Dijkstra's algorithm for finding shortest paths with non-negative weights.                   |
+| `Main.java`               | Small demo showcasing the graph with cities in Kazakhstan.                                   |
 
-## Quick start
+### ▶️ How to Run
 
 ```bash
-javac *.java    # compile
-java Main       # run demo
+javac *.java     # Compile all files
+java Main        # Run the demo
+```
